@@ -1,0 +1,75 @@
+body{
+    background-image: url(giving-img.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff
+
+}
+.progress{
+    margin: 300px auto;
+}
+
+
+
+.progress img{
+    width: 75px;
+    margin-bottom: 20px;
+}
+/* centering icons */
+ul{
+    text-align: center;
+}
+/* arrangement of icons */
+ul li{
+    display: inline-block;
+    width: 205px;
+    relative
+}
+/* dollar sign icon */
+ul li .fa{
+    background-color: #148e14;
+    width: 13px;
+    height: 16px;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+/* bar color */
+ul li .fa::after{
+    content: '';
+    background: #D6CFC9;
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    center: 0;
+    center: 110px;
+    z-index: -1;
+}
+/* adding color to horizontal dollar sign tier */
+ul li:nth-child(3) .fa{
+    background: #db0a5b;
+}
+ul li:nth-child(3) .fa::after{
+    background: #db0a5b;
+}
+ul li:nth-child(1) .fa,
+ul li:nth-child(2) .fa,
+{
+    background: #e9ffdb;
+    }
+ul li:nth-child(1) .fa::after,
+ul li:nth-child(2) .fa::after
+{
+background: #e9ffdb;
+}
+
+ul li:first-child .fa::after{
+    width: 105px;
+    left: 100px;
+}
+
+ul li:last-child .fa::after{
+    width: 105px;
+}
